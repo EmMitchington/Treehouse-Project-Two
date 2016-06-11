@@ -1,0 +1,225 @@
+/*-------------------------
+  Base Styles
+-------------------------*/
+
+body {
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #ccf5ff;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  background-color: white;
+  font-size: 18px;
+  color: #808080
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*-------------------------
+    Layout Styles
+-------------------------*/
+
+/*--- Header and Nav ---*/
+.main-header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.name {
+  color: #00a3cc;
+}
+
+.main-nav li {
+  display: block;
+  padding: .5em 0;
+  margin: 0 15px;
+  background-color: #e6faff;
+}
+
+.main-nav a:hover {
+  color: #00a3cc;
+}
+
+/*--- Containers ---*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-student {
+  margin: 2em 0;
+}
+
+.portfolio {
+  width: 100%;
+  display: inline-block;
+}
+
+.portfolio-gallery {
+
+}
+
+.footer {
+  padding: 1.5em 0;
+}
+
+span {
+  font-weight: bold;
+}
+
+.main-footer {
+  padding: 1.5em 0;
+}
+
+.footer-name {
+  float: left;
+}
+
+.footer-nav {
+  float: right;
+  display: inline-block;
+}
+
+.footer-nav a:hover {
+  color: #00a3cc;
+}
+
+/*-------------------------
+    Media Queries
+-------------------------*/
+
+/*--- Tablet ---*/
+@media (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .profile-picture {
+    float: right;
+    width: 40%;
+  }
+
+  .bio {
+    width: 58%;
+    float: left;
+    display: inline-block;
+    text-align: left;
+  }
+
+
+  .portfolio {
+    padding-top: 5em;
+  }
+
+  .port {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+  }
+
+  .one,
+  .three,
+  .five {
+    padding: 1em 1em;
+  }
+
+  .two,
+  .four,
+  .six {
+    padding: 1em 1em;
+  }
+
+  .footer-name {
+    display: inline;
+    float: left;
+    margin-right: 1em;
+  }
+
+  .footer-nav {
+    display: inline;
+    float: right;
+    margin-left: 1em;
+  }
+
+  .clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+}
+
+/*--- Desktop ---*/
+@media (min-width: 1024px) {
+  .main-header {
+    display: inline;
+    background-color: #ccf5ff;
+    margin: 0%;
+  }
+
+  .name {
+    display: inline;
+    float: left;
+  }
+
+  .main-nav {
+    display: inline;
+    float: right;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .portfolio {
+    margin: 35px 0;
+  }
+
+  .port {
+    max-width: 30%;
+    display: inline-block;
+    float: none;
+    margin: .5em;
+    padding: 0;
+  }
+
+  .contact-me {
+    margin:25px 225px 25px 225px;
+  }
+}
