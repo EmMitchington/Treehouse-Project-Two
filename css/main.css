@@ -37,7 +37,6 @@ ul {
 
 li {
   list-style: none;
-  display: block;
   margin: 0 auto;
 }
 
@@ -93,7 +92,7 @@ img {
 
 }
 
-.footer {
+footer {
   padding: 1.5em 0;
 }
 
@@ -101,8 +100,9 @@ span {
   font-weight: bold;
 }
 
-.main-footer {
-  padding: 1.5em 0;
+.main-footer li{
+  display: inline;
+  padding: 0 .5em;
 }
 
 .footer-name {
@@ -111,7 +111,6 @@ span {
 
 .footer-nav {
   float: right;
-  display: inline-block;
 }
 
 .footer-nav a:hover {
@@ -167,15 +166,13 @@ span {
   }
 
   .footer-name {
-    display: inline;
     float: left;
-    margin-right: 1em;
+    margin-left: 1em;
   }
 
   .footer-nav {
-    display: inline;
     float: right;
-    margin-left: 1em;
+    margin-right: 1em;
   }
 
   .clearfix::after {
